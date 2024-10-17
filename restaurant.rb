@@ -48,11 +48,11 @@ class Restaurant
     end
   end
 
-  # the keyword self can be used in a methos to call the instance but a method already has the instance
+  # the keyword self can be used in a method to call the instance but a method already has the instance
   def popularity_review
     # self in an instance method is the instance itself
     if @clients.size > 10
-      "#{self.upcased_name} is very popular!" # just name works
+      "#{self.upcased_name} is very popular!" # just name works, no need to specify self
     else
       "#{self.upcased_name} is not very popular!"
     end
